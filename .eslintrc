@@ -1,0 +1,14 @@
+{
+  "root": true,
+  "extends": ["@nuxt/eslint-config"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.mts", "*.cts", "*.vue"],
+      "rules": {
+        "semi": ["error", "never"],
+        "no-trailing-spaces": ["warn", { "ignoreComments": true, "skipBlankLines": true }],
+        "space-before-function-paren": ["error", { "anonymous": "never", "named": "never", "asyncArrow": "always" }]
+      }
+    }
+  ]
+}
